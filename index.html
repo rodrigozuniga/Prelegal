@@ -15,5 +15,20 @@
     <option value="contact">Contact</option>
   </select>
   <p id="prelegal-menu-help">Choose one of the available pre-legal topics.</p>
+
+  <h2>Counter</h2>
+  <p>Count: <span id="count">0</span></p>
+  <button id="increment-btn" type="button">Increase Counter</button>
+
+  <script>
+    let count = 0;
+    const countEl = document.getElementById('count');
+    const incrementBtn = document.getElementById('increment-btn');
+
+    incrementBtn.addEventListener('click', () => {
+      count += 1;
+      countEl.textContent = count;
+    });
+  </script>
 </body>
 </html>
