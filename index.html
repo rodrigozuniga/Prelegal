@@ -8,8 +8,9 @@
 <body>
   <h1>Pre-Legal</h1>
   <label for="prelegal-menu">Choose an option:</label>
-  <select id="prelegal-menu" name="prelegal-menu">
-    <option value="">Select one</option>
+  <p id="prelegal-menu-help">Selecting an option will help you navigate pre-legal topics.</p>
+  <select id="prelegal-menu" name="prelegal-menu" aria-describedby="prelegal-menu-help">
+    <option value="" selected disabled>Select one</option>
     <option value="intake">Intake</option>
     <option value="review">Review</option>
     <option value="contact">Contact</option>
