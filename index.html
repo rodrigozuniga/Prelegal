@@ -6,14 +6,22 @@
   <title>Pre-Legal</title>
 </head>
 <body>
-  <h1>Pre-Legal</h1>
+  <h1>Pre-Legal Forms</h1>
   <label for="prelegal-menu">Choose an option:</label>
   <select id="prelegal-menu" name="prelegal-menu" aria-describedby="prelegal-menu-help">
     <option value="" selected disabled>Select one</option>
+    <option value="mutual-nda.html">Mutual NDA Creator</option>
     <option value="intake">Intake</option>
     <option value="review">Review</option>
     <option value="contact">Contact</option>
   </select>
   <p id="prelegal-menu-help">Choose one of the available pre-legal topics.</p>
+  <script>
+    document.getElementById('prelegal-menu').addEventListener('change', function () {
+      if (this.value.endsWith('.html')) {
+        window.location.href = this.value;
+      }
+    });
+  </script>
 </body>
 </html>
