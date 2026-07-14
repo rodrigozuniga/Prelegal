@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mutual Non-Disclosure Agreement — Standard Terms",
+    "description": "Common Paper standard Mutual Non-Disclosure Agreement (MNDA) terms, created by a committee of attorneys representing technology vendors, procurement teams, and law firms.",
+    "filename": "Mutual-NDA.md"
+  },
+  {
+    "name": "Mutual Non-Disclosure Agreement — Cover Page",
+    "description": "Cover page for the Common Paper Mutual NDA. Incorporates the Standard Terms by reference and holds the negotiated, party-specific details.",
+    "filename": "Mutual-NDA-coverpage.md"
+  },
+  {
+    "name": "Cloud Service Agreement",
+    "description": "Common Paper standard Cloud Service Agreement (CSA) for licensing cloud-hosted software.",
+    "filename": "CSA.md"
+  },
+  {
+    "name": "Service Level Agreement",
+    "description": "Common Paper Service Level Agreement (SLA) defining uptime, support, and performance commitments.",
+    "filename": "SLA.md"
+  },
+  {
+    "name": "Data Processing Agreement",
+    "description": "Common Paper Data Processing Agreement (DPA) governing the processing of personal data between parties.",
+    "filename": "DPA.md"
+  },
+  {
+    "name": "Design Partner Agreement",
+    "description": "Common Paper standard Design Partner Agreement for early-stage collaboration between a vendor and a design partner customer.",
+    "filename": "Design-Partner-Agreement.md"
+  },
+  {
+    "name": "Professional Services Agreement",
+    "description": "Common Paper standard Professional Services Agreement (PSA) for the delivery of professional services.",
+    "filename": "PSA.md"
+  },
+  {
+    "name": "Partnership Agreement",
+    "description": "Common Paper standard Partnership Agreement governing a business partnership between two companies.",
+    "filename": "Partnership-Agreement.md"
+  },
+  {
+    "name": "Business Associate Agreement",
+    "description": "Common Paper standard Business Associate Agreement (BAA) for HIPAA-covered entities and their business associates.",
+    "filename": "BAA.md"
+  },
+  {
+    "name": "Software License Agreement",
+    "description": "Common Paper standard Software License Agreement for licensing on-premises or self-hosted software.",
+    "filename": "Software-License-Agreement.md"
+  },
+  {
+    "name": "Pilot Agreement",
+    "description": "Common Paper standard Pilot Agreement for running a time-boxed trial of a product or service before a full commercial engagement.",
+    "filename": "Pilot-Agreement.md"
+  },
+  {
+    "name": "AI Addendum",
+    "description": "Common Paper standard AI Addendum covering the use of artificial intelligence and machine learning within a broader agreement.",
+    "filename": "AI-Addendum.md"
+  }
+]
