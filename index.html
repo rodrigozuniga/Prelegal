@@ -6,10 +6,11 @@
   <title>Pre-Legal</title>
 </head>
 <body>
-  <h1>Pre-Legal</h1>
+  <h1>Pre-Legal Forms</h1>
   <label for="prelegal-menu">Choose an option:</label>
   <select id="prelegal-menu" name="prelegal-menu" aria-describedby="prelegal-menu-help">
     <option value="" selected disabled>Select one</option>
+    <option value="mutual-nda.html">Mutual NDA Creator</option>
     <option value="intake">Intake</option>
     <option value="review">Review</option>
     <option value="contact">Contact</option>
@@ -21,6 +22,12 @@
   <button id="increment-btn" type="button">Increase Counter</button>
 
   <script>
+    document.getElementById('prelegal-menu').addEventListener('change', function () {
+      if (this.value.endsWith('.html')) {
+        window.location.href = this.value;
+      }
+    });
+
     let count = 0;
     const countEl = document.getElementById('count');
     const incrementBtn = document.getElementById('increment-btn');
