@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Legal</title>
+</head>
+<body>
+  <h1>Pre-Legal Forms</h1>
+  <label for="prelegal-menu">Choose an option:</label>
+  <select id="prelegal-menu" name="prelegal-menu" aria-describedby="prelegal-menu-help">
+    <option value="" selected disabled>Select one</option>
+    <option value="mutual-nda.html">Mutual NDA Creator</option>
+    <option value="intake">Intake</option>
+    <option value="review">Review</option>
+    <option value="contact">Contact</option>
+  </select>
+  <p id="prelegal-menu-help">Choose one of the available pre-legal topics.</p>
+
+  <h2>Counter</h2>
+  <p>Count: <span id="count">0</span></p>
+  <button id="increment-btn" type="button">Increase Counter</button>
+
+  <script>
+    document.getElementById('prelegal-menu').addEventListener('change', function () {
+      if (this.value.endsWith('.html')) {
+        window.location.href = this.value;
+      }
+    });
+
+    let count = 0;
+    const countEl = document.getElementById('count');
+    const incrementBtn = document.getElementById('increment-btn');
+
+    incrementBtn.addEventListener('click', () => {
+      count += 1;
+      countEl.textContent = count;
+    });
+  </script>
+</body>
+</html>
