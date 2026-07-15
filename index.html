@@ -22,6 +22,12 @@
   <button id="increment-btn" type="button">Increase Counter</button>
 
   <script>
+    document.getElementById('prelegal-menu').addEventListener('change', function () {
+      if (this.value.endsWith('.html')) {
+        window.location.href = this.value;
+      }
+    });
+
     let count = 0;
     const countEl = document.getElementById('count');
     const incrementBtn = document.getElementById('increment-btn');
