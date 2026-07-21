@@ -56,6 +56,22 @@
       color: var(--panel-muted);
     }
 
+    .site-footer {
+      text-align: center;
+      padding: 1rem 1.5rem 1.5rem;
+      border-top: 1px solid var(--panel-line);
+    }
+    .site-footer a {
+      font-size: 0.75rem;
+      color: var(--panel-muted);
+      text-decoration: none;
+    }
+    .site-footer a:hover,
+    .site-footer a:focus-visible {
+      color: var(--brass);
+      text-decoration: underline;
+    }
+
     .layout {
       display: grid;
       grid-template-columns: minmax(320px, 420px) 1fr;
@@ -276,7 +292,7 @@
 
     @media print {
       body { background: #fff; }
-      .site-header, .form-rail { display: none; }
+      .site-header, .form-rail, .site-footer { display: none; }
       .layout { display: block; min-height: 0; }
       .sheet-wrap { padding: 0; overflow: visible; }
       .sheet { box-shadow: none; max-width: none; padding: 0; font-size: 11pt; }
@@ -452,6 +468,10 @@
       </article>
     </main>
   </div>
+
+  <footer class="site-footer">
+    <a href="disclaimers.html">Legal Disclaimers</a>
+  </footer>
 
   <script>
     (function () {
